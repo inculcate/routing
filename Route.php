@@ -116,7 +116,7 @@ class Route
     protected static $fn;
     /**
     * @var (array)
-    * @return all the routes of the application
+    * @return Inculcate\Routing\Route\https
     */
     protected static $https = [];
 
