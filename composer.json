@@ -1,0 +1,34 @@
+{
+    "name": "inculcate/routing",
+    "description": "The Outgood components.",
+    "license": "MIT",
+    "homepage": "https://softflies.com",
+    "support": {
+        "issues": "https://github.com/softflies/framework/issues",
+        "source": "https://github.com/softflies/framework"
+    },
+    "authors": [
+        {
+            "name": "Amit Roy",
+            "email": "amit@softflies.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Inculcate\\Routing\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "8.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
