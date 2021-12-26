@@ -5,6 +5,9 @@
  * @license     MIT public license
  */
 namespace Inculcate\Routing;
+
+use ReflectionMethod;
+use ReflectionException;
 /**
  * Class Route.
  */
@@ -374,7 +377,7 @@ class Route
                     try{
                         //we need to check the called controller and method..
                         // whether the controller and method are what they are..
-                        $reqControllerMathod = new \ReflectionMethod($controller, $method);
+                        $reqControllerMathod = new ReflectionMethod($controller, $method);
                         // get the controller instance
                         $controller = new $controller();  
                         // requested method has to be public
@@ -386,8 +389,8 @@ class Route
         
                     } 
                     //we handle the error whilst running the controller and it's method..
-                    catch ( \ReflectionException $reflectionException ){
-                       print_r($reflectionException->getMessage()); exit;
+                    catch ( ReflectionException $reflectionException ){
+                       print($reflectionException->getMessage()); exit;
                     } 
                     
                 }
