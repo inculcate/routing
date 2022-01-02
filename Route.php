@@ -408,5 +408,9 @@ class Route
             }
             
         }
+        //Method nt found
+        else{
+            print("Requested method ".self::getRequestedMethod()." not found"); exit;
+        }
     }
 }
